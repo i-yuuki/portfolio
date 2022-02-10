@@ -1,0 +1,13 @@
+.pf-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  padding: 0 10%;
+  background-size: cover;
+  background-position: center;
+  color: var(--pf-on-primary);
+  scroll-snap-align: center;
+}

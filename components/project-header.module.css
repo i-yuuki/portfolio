@@ -1,0 +1,62 @@
+.pf-project-header {
+  background-position: center;
+  background-size: cover;
+}
+
+.pf-project-header hr {
+  width: 50%;
+}
+
+.pf-project-header__content {
+  padding: 4rem 0px;
+  text-align: center;
+  background-color: rgba(var(--pf-background-rgb), 0.7);
+  text-shadow: 2px 2px 3px var(--pf-background);
+  backdrop-filter: blur(4px);
+}
+
+.pf-project-header__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0px;
+}
+
+.pf-project-header__info dt,
+.pf-project-header__info dd {
+  display: inline-block;
+}
+
+.pf-project-header__info dt {
+  font-weight: bold;
+}
+
+.pf-project-header__info dd {
+  margin-left: 0.5rem;
+}
+
+.pf-project-header__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0px;
+  list-style: none;
+}
+
+.pf-project-header__links a {
+  color: inherit;
+  padding: 0.5rem 1em;
+  font-size: 0.75em;
+  font-weight: bold;
+  background-color: rgba(var(--pf-background-rgb), 0.5);
+  border: solid 1px;
+  transition: background-color 0.1s ease;
+}
+
+.pf-project-header__links a:hover {
+  background-color: var(--pf-background);
+}
