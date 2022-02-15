@@ -10,7 +10,7 @@ recommend: 2000
 summary: "Next.js このサイト"
 banner: "/images/deer1.jpg"
 links:
-  - text: ソースコードを見る
+  - text: ソースコードを見る (Coming Soon)
     href: https://github.com/i-yuuki/portfolio/
 ---
 
