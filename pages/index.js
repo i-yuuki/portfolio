@@ -12,7 +12,7 @@ export default function Home({ projects }) {
       </Head>
       <Layout>
         <div className='pf-hero-wrapper'>
-          <Hero background='/images/deer1.jpg'>
+          <Hero video='/videos/hero.webm'>
             <div className='pf-hero__group'>
               <h1>C++でゲームを作ります</h1>
               <span>今田侑樹のポートフォリオ</span>
