@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import Layout, { siteTitle } from '../components/layout'
 import Hero from '../components/hero'
+import Typewriter from 'typewriter-effect'
 
 export default function Home({ projects }) {
   return (
@@ -14,7 +15,18 @@ export default function Home({ projects }) {
         <div className='pf-hero-wrapper'>
           <Hero video='/videos/hero.webm'>
             <div className='pf-hero__group'>
-              <h1>C++でゲームを作ります</h1>
+              <h1><Typewriter options={{
+                strings: [
+                  'C++でゲームを作ります',
+                  'C#でゲームを作ります',
+                  'JavaScriptでプチツールを作ります',
+                ],
+                autoStart: true,
+                loop: true,
+                pauseFor: 3000,
+                delay: 50,
+                deleteSpeed: 30,
+              }} /></h1>
               <span>今田侑樹のポートフォリオ</span>
             </div>
             <Link href='/projects'>
