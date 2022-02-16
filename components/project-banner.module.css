@@ -1,0 +1,16 @@
+.pf-project-banner {
+  background-position: center;
+  background-size: cover;
+}
+
+.pf-project-banner hr {
+  width: 50%;
+}
+
+.pf-project-banner__content {
+  padding: 4rem 0px;
+  text-align: center;
+  background-color: rgba(var(--pf-background-rgb), 0.7);
+  text-shadow: 2px 2px 3px var(--pf-background);
+  backdrop-filter: blur(4px);
+}

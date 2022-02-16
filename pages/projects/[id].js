@@ -1,7 +1,24 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../../components/layout'
-import ProjectHeader from '../../components/project-header';
+import ProjectBanner from '../../components/project-banner';
 import { getProjectData, getProjectIds } from '../../lib/projects'
+
+function getProjectDuration(project){
+  const startDate = new Date(project.dates.start);
+  const endDate = new Date(project.dates.end);
+  const startUTC = Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
+  const endUTC = Date.UTC(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
+
+  const msPerDay = 86400000;
+  // 終了日も期間に含めたいので+1日
+  const days = Math.floor((endUTC - startUTC) / msPerDay) + 1;
+
+  if(days >= 30){
+    return `${Math.floor(days / 30)}か月`;
+  }else{
+    return `${days}日`;
+  }
+}
 
 export default function Test({ project }){
   return (
@@ -10,9 +27,82 @@ export default function Test({ project }){
         <title>{project.title} | {siteTitle}</title>
       </Head>
       <Layout>
-        <ProjectHeader project={project}></ProjectHeader>
+        <ProjectBanner project={project}>
+          <h1>{project.title}</h1>
+          <p>{project.summary}</p>
+          <hr />
+          <dl className='pf-project-banner__info'>
+            <div>
+              <dt>実装期間:</dt>
+              <dd>{getProjectDuration(project)}</dd>
+            </div>
+            <div>
+              <dt>使用言語:</dt>
+              <dd>{project.languages.join(', ')}</dd>
+            </div>
+          </dl>
+          <ul className='pf-project-banner__links'>
+            {project.links?.map((link, i) => (<li key={i}>
+              <a href={link.href}>{link.text}</a>
+            </li>))}
+          </ul>
+        </ProjectBanner>
         <div className='container prose' dangerouslySetInnerHTML={{ __html: project.contentHtml }} />
+        <ProjectBanner project={project}>
+          <ul className='pf-project-banner__links'>
+            {project.links?.map((link, i) => (<li key={i}>
+              <a href={link.href}>{link.text}</a>
+            </li>))}
+          </ul>
+        </ProjectBanner>
       </Layout>
+      <style jsx>{`
+        .pf-project-banner__info {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          margin: 0px;
+        }
+
+        .pf-project-banner__info dt,
+        .pf-project-banner__info dd {
+          display: inline-block;
+        }
+
+        .pf-project-banner__info dt {
+          font-weight: bold;
+        }
+
+        .pf-project-banner__info dd {
+          margin-left: 0.5rem;
+        }
+
+        .pf-project-banner__links {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          padding: 0px;
+          list-style: none;
+        }
+
+        .pf-project-banner__links a {
+          color: inherit;
+          padding: 0.5rem 1em;
+          font-size: 0.75em;
+          font-weight: bold;
+          background-color: rgba(var(--pf-background-rgb), 0.5);
+          border: solid 1px;
+          transition: background-color 0.1s ease;
+        }
+
+        .pf-project-banner__links a:hover {
+          background-color: var(--pf-background);
+        }
+      `}</style>
     </>
   )
 }
