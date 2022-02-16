@@ -44,7 +44,7 @@ export default function Home({ projects }) {
         .pf-hero__group{
           display: flex;
           flex-direction: column;
-          text-shadow: 0 3px rgb(32, 32, 32, 0.5);
+          text-shadow: 0px 0px 3px rgb(32, 32, 32, 0.5), 0px 0.1em rgb(32, 32, 32, 0.5);
         }
         .pf-hero__group>*{
           margin: 0px;
