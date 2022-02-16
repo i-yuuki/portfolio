@@ -53,7 +53,7 @@ export default function Home({ projects }) {
           display: inline-block;
           padding: 1rem 2rem;
           background-color: rgba(255, 255, 255, 0.75);
-          color: var(--pf-on-background);
+          color: #000;
           font-weight: bold;
           cursor: pointer;
           transition: background-color 0.1s ease;
