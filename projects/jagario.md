@@ -17,6 +17,18 @@ links:
     href: https://github.com/i-yuuki/jagario-server/
 ---
 
-# NeaR: Replica
+## 概要
 
-More info coming soon™
+昔どこかで見た気がするオンラインゲームです。UDPを使う課題で作りました。
+
+## やったこと
+
+### NearLib の使用
+
+[Near](/projects/near)プロジェクトで作ったライブラリ NearLib を使いました。ちゃんとライブラリとして Near 以外の作品にも使えて幸せです。
+
+## やらなかったこと
+
+### クライアントとサーバーの一体化
+
+時間があればやってもよかったかも。
