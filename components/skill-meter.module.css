@@ -1,0 +1,12 @@
+.pf-skill-meter {
+  display: inline-block;
+  color: #ffd600;
+  text-shadow: 0px 0px 4px rgba(255, 214, 0, 0.5);
+}
+
+.pf-skill-meter__bar {
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  background-color: var(--pf-primary);
+}

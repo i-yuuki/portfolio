@@ -2,9 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Layout from '../components/layout'
+import SkillMeter from '../components/skill-meter'
 
 export default function About() {
-  return (
+  return (<>
     <Layout>
       <div className='container'>
         <h1>
@@ -20,24 +21,71 @@ export default function About() {
           <li>CGエンジニア検定 エキスパート</li>
         </ul>
         <h2>言語</h2>
-        <ul>
-          <li>Java</li>
-          <li>C/C++</li>
-          <li>C#</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-        </ul>
+        <dl className='skill-list'>
+          <dt>Java</dt>
+          <dd><SkillMeter value={5} /></dd>
+          <dd>もうすぐ11年目 完全独学</dd>
+          <dt>C/C++</dt>
+          <dd><SkillMeter value={4} /></dd>
+          <dd>もうすぐ4年目</dd>
+          <dt>C#</dt>
+          <dd><SkillMeter value={3} /></dd>
+          <dd>もうすぐ3年目 ほぼUnityのみに使用</dd>
+          <dt>JavaScript</dt>
+          <dd><SkillMeter value={3} /></dd>
+          <dd>変数がvarだった頃から使用 ブラウザ・node どちらも嗜む</dd>
+          <dt>Lua</dt>
+          <dd><SkillMeter value={1} /></dd>
+          <dd>数年前に少々</dd>
+          <dt>Ruby</dt>
+          <dd><SkillMeter value={1} /></dd>
+          <dd>数日触っただけ</dd>
+        </dl>
         <h2>ツール</h2>
-        <ul>
-          <li>VSCode</li>
-          <li>Unity</li>
-          <li>Figma</li>
-          <li>MS Office</li>
-          <li>Git Bash</li>
-          <li>Blender</li>
-        </ul>
+        <dl className='skill-list'>
+          <dt>VSCode</dt>
+          <dd><SkillMeter value={4} /></dd>
+          <dd>毎日使う手放せないエディター</dd>
+          <dt>Unity</dt>
+          <dd><SkillMeter value={3} /></dd>
+          <dd>授業で使用開始</dd>
+          <dt>Figma</dt>
+          <dd><SkillMeter value={3} /></dd>
+          <dd>UI以外の簡易素材制作にも使用</dd>
+          <dt>MS Office</dt>
+          <dd><SkillMeter value={2} /></dd>
+          <dd>ださくない資料づくりを研究</dd>
+          <dt>Git Bash</dt>
+          <dd><SkillMeter value={2} /></dd>
+          <dd>Gitは全部ターミナルから使用</dd>
+          <dt>Blender</dt>
+          <dd><SkillMeter value={1} /></dd>
+          <dd>モデルの確認とかなりシンプルな制作</dd>
+        </dl>
       </div>
     </Layout>
-  )
+    <style jsx>{`
+      .skill-list {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 1rem 2rem;
+        margin: 1rem 0px;
+        padding: 0px;
+      }
+      .skill-list dt {
+        font-weight: bold;
+        text-align: right;
+      }
+      .skill-list dd {
+        margin: 0px;
+      }
+      .skill-bar::-webkit-meter-optimum-value {
+        background-color: var(--pf-primary);
+      }
+
+      @media screen and (min-width: 768px) {
+
+      }
+    `}</style>
+  </>)
 }
