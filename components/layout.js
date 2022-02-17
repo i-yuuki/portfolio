@@ -37,6 +37,11 @@ export default function Layout({ children }) {
         </div>
       </header>
       {children}
+      <footer className={styles['pf-footer']}>
+        <div className='container'>
+          <p className={styles['pf-copyright']}>© 2022 Imada Yuuki</p>
+        </div>
+      </footer>
     </>
   )
 }
