@@ -6,9 +6,9 @@ dates:
 languages:
   - "CSS"
   - "JavaScript"
-recommend: 2000
+recommend: 1900
 summary: "Next.js このサイト"
-banner: "/images/deer1.jpg"
+banner: "/images/portfolio/banner.png"
 links:
   - text: ソースコードを見る (Coming Soon)
     href: https://github.com/i-yuuki/portfolio/
