@@ -24,7 +24,7 @@ export default function About() {
         <dl className='skill-list'>
           <dt>Java</dt>
           <dd><SkillMeter value={5} /></dd>
-          <dd>もうすぐ11年目 完全独学</dd>
+          <dd>もうすぐ10 (11?) 年目 完全独学</dd>
           <dt>C/C++</dt>
           <dd><SkillMeter value={4} /></dd>
           <dd>もうすぐ4年目</dd>
@@ -38,7 +38,7 @@ export default function About() {
           <dd><SkillMeter value={1} /></dd>
           <dd>数年前に少々</dd>
           <dt>Ruby</dt>
-          <dd><SkillMeter value={1} /></dd>
+          <dd><SkillMeter value={0} /></dd>
           <dd>数日触っただけ</dd>
         </dl>
         <h2>ツール</h2>
