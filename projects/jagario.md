@@ -11,9 +11,9 @@ banner: "/images/jagario/banner.png"
 links:
   - text: 実行ファイルをダウンロード (Coming Soon)
     href: https://example.com/
-  - text: ソースコードを見る (Coming Soon)
+  - text: ソースコードを見る
     href: https://github.com/i-yuuki/jagario/
-  - text: ソースコードを見る (Coming Soon)
+  - text: ソースコードを見る (サーバー)
     href: https://github.com/i-yuuki/jagario-server/
 ---
 

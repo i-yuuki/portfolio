@@ -13,7 +13,7 @@ banner: "/images/misosoup/banner.png"
 links:
   - text: サイトを見る
     href: https://misosoup.vercel.app/
-  - text: ソースコードを見る (Coming Soon)
+  - text: ソースコードを見る
     href: https://github.com/i-yuuki/misosoup/
 ---
 

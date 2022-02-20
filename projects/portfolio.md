@@ -10,7 +10,7 @@ recommend: 1900
 summary: "Next.js このサイト"
 banner: "/images/portfolio/banner.png"
 links:
-  - text: ソースコードを見る (Coming Soon)
+  - text: ソースコードを見る
     href: https://github.com/i-yuuki/portfolio/
 ---
 
