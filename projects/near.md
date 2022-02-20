@@ -10,11 +10,11 @@ summary: "DirectX 11 ライブラリと実験集"
 banner: "/images/near/banner.png"
 video: "/videos/placeholder.mp4"
 links:
-  - text: 動画を見る (Coming Soon)
-    href: https://example.com/
-  - text: 実行ファイルをダウンロード (Coming Soon)
-    href: https://example.com/
-  - text: ソースコードを見る (Coming Soon)
+  - text: 概要動画を見る
+    href: https://drive.google.com/file/d/1YQZuJY03IfkM3_4sgCjN5mdEexim4JS8/view?usp=sharing
+  - text: NearLib の動画を見る
+    href: https://drive.google.com/file/d/1sJbjC1YzxAeXXCXgtSmE2hh23iKZwtIJ/view?usp=sharing
+  - text: ソースコードを見る
     href: https://github.com/i-yuuki/near/
 ---
 
