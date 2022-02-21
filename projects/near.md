@@ -15,7 +15,7 @@ links:
   - text: NearLib の動画を見る
     href: https://drive.google.com/file/d/1sJbjC1YzxAeXXCXgtSmE2hh23iKZwtIJ/view?usp=sharing
   - text: ソースコードを見る
-    href: https://github.com/i-yuuki/near/
+    href: https://github.com/i-yuuki/near/tree/gui
 ---
 
 ## 概要
