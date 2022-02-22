@@ -2,7 +2,7 @@
 title: "Near & NearLib"
 dates:
   start: "2021-07-12"
-  end: "2022-01-30"
+  end: "2022-02-22"
 languages:
   - "C++"
 recommend: 10000
@@ -14,6 +14,8 @@ links:
     href: https://drive.google.com/file/d/1YQZuJY03IfkM3_4sgCjN5mdEexim4JS8/view?usp=sharing
   - text: NearLib の動画を見る
     href: https://drive.google.com/file/d/1sJbjC1YzxAeXXCXgtSmE2hh23iKZwtIJ/view?usp=sharing
+  - text: 実行ファイルとプレイ動画を見る
+    href: https://drive.google.com/drive/folders/15LGdDp-phcjiOhAyX09JQzAVBz0xfqoh?usp=sharing
   - text: ソースコードを見る
     href: https://github.com/i-yuuki/near/tree/gui
 ---
