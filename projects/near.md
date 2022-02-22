@@ -8,7 +8,7 @@ languages:
 recommend: 10000
 summary: "DirectX 11 ライブラリと実験集"
 banner: "/images/near/banner.png"
-video: "/videos/placeholder.mp4"
+video: "/videos/near.webm"
 links:
   - text: 概要動画を見る
     href: https://drive.google.com/file/d/1YQZuJY03IfkM3_4sgCjN5mdEexim4JS8/view?usp=sharing
