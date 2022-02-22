@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
   return (
     <div className={styles['pf-project-card']} onMouseEnter={() => playVideo()} onMouseLeave={() => pauseVideo()}>
       <div className={styles['pf-project-card__banner']} style={{backgroundImage: `url(${project.banner})`}}>
-        {project.video && <video ref={video} className={styles['pf-project-card__video']} src={project.video} muted></video>}
+        {project.video && <video ref={video} className={styles['pf-project-card__video']} src={project.video} muted loop></video>}
       </div>
       <div className={styles['pf-project-card__caption']}>
         <h2>{project.title}</h2>
