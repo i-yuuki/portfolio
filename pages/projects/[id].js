@@ -1,24 +1,8 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../../components/layout'
 import ProjectBanner from '../../components/project-banner';
+import { getProjectDuration } from '../../lib/project';
 import { getProjectData, getProjectIds } from '../../lib/projects'
-
-function getProjectDuration(project){
-  const startDate = new Date(project.dates.start);
-  const endDate = new Date(project.dates.end);
-  const startUTC = Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
-  const endUTC = Date.UTC(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
-
-  const msPerDay = 86400000;
-  // 終了日も期間に含めたいので+1日
-  const days = Math.floor((endUTC - startUTC) / msPerDay) + 1;
-
-  if(days >= 30){
-    return `${Math.floor(days / 30)}か月`;
-  }else{
-    return `${days}日`;
-  }
-}
 
 export default function Test({ project }){
   return (

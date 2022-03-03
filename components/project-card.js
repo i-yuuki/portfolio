@@ -1,17 +1,10 @@
 import { useRef } from 'react'
 import styles from './project-card.module.css'
+import { getProjectYear } from '../lib/project';
 
 export default function ProjectCard({ project }) {
   const video = useRef();
-  let summary = '';
-  const startYear = new Date(project.dates.start).getFullYear();
-  const endYear = new Date(project.dates.end).getFullYear();
-  if(startYear === endYear){
-    summary += `${startYear}年`;
-  }else{
-    summary += `${startYear}～${endYear}年`;
-  }
-  summary += ` ${project.summary}`;
+  const summary = `${getProjectYear(project)} ${project.summary}`;
   function playVideo(){
     video.current?.play();
   }
