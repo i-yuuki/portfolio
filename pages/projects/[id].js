@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../../components/layout'
 import ProjectBanner from '../../components/project-banner';
-import { getProjectDuration } from '../../lib/project';
+import { getProjectDuration, getProjectYear } from '../../lib/project';
 import { getProjectData, getProjectIds } from '../../lib/projects'
 
 export default function Test({ project }){
@@ -18,7 +18,7 @@ export default function Test({ project }){
           <dl className='pf-project-banner__info'>
             <div>
               <dt>実装期間:</dt>
-              <dd>{getProjectDuration(project)}</dd>
+              <dd>{getProjectYear(project)} ({getProjectDuration(project)})</dd>
             </div>
             <div>
               <dt>使用言語:</dt>
