@@ -67,6 +67,10 @@ img {
   display: block;
 }
 
+video {
+  max-width: 100%;
+}
+
 hr {
   height: 1px;
   background-color: rgba(var(--pf-on-background-rgb), 0.2);

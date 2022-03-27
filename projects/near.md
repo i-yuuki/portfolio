@@ -84,11 +84,16 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int){
 
 CSS と [Flutter](https://flutter.dev/) を参考にした flex レイアウトを搭載したUIです。
 
-## やりたかったこと
+ほかの C++ 作品ではUIが全て絶対座標直打ちだったのに対し、今回はこれを使うことで自動で整った配置を作ることができます。UIの内容や画面サイズが変わっても対応できるポテンシャルも秘めています。
 
-### NearLib 2
+CSS でいうところの `flex-direction`、`align-items`、`gap` と `flex-grow` を実装しています。
+
+<video src="/videos/near/flex-layout-size.webm" controls playsinline loop></video>
+
+レイアウトサイズを変えてみたようす
 
 ## 参考
 
 - [Valve developers discuss Portal problems](https://www.youtube.com/watch?v=riijspB9DIQ) ― 本家 Portal 2 で使われたステンシル式の解説
 - [Coding Adventure: Portals](https://www.youtube.com/watch?v=cWpFZbjtSQg) ― テクスチャ式のポータル描画をUnityで作る動画
+- [Flex class](https://api.flutter.dev/flutter/widgets/Flex-class.html) ― Flutterのflexレイアウトアルゴリズム
