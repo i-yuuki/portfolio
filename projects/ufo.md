@@ -6,7 +6,7 @@ dates:
 languages:
   - "C"
   - "C++"
-recommend: 1100
+recommend: 2000
 summary: "DirectX 9 冬のリア充を吸い取る3Dゲーム"
 banner: "/images/ufo/banner.png"
 links:

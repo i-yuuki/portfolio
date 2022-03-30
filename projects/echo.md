@@ -5,7 +5,7 @@ dates:
   end: "2021-11-15"
 languages:
   - "C#"
-recommend: 100
+recommend: 5000
 summary: "Unity アクションゲーム"
 banner: "/images/echo/banner.jpg"
 links:
