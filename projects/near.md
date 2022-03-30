@@ -88,9 +88,10 @@ CSS と [Flutter](https://flutter.dev/) を参考にした flex レイアウト�
 
 CSS でいうところの `flex-direction`、`align-items`、`gap` と `flex-grow` を実装しています。
 
-<video src="/videos/near/flex-layout-size.webm" controls playsinline loop></video>
-
-レイアウトサイズを変えてみたようす
+<figure>
+  <video src="/videos/near/flex-layout-size.webm" controls playsinline loop></video>
+  <figcaption>レイアウトサイズを変えてみたようす</figcaption>
+</figure>
 
 ## 参考
 

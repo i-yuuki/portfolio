@@ -28,10 +28,12 @@ Winter UFO はUFOになって冬の街のリア充を吸い取り、地球軍の
 
 ## 画像
 
-![](/images/ufo/title.jpg)
+<figure>
+  <img src="/images/ufo/title.jpg" />
+  <figcaption>タイトル画面</figcaption>
+</figure>
 
-タイトル画面
-
-![](/images/ufo/controls.jpg)
-
-操作説明オーバーレイ
+<figure>
+  <img src="/images/ufo/controls.jpg" />
+  <figcaption>操作説明オーバーレイ</figcaption>
+</figure>

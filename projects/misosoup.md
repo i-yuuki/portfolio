@@ -31,15 +31,17 @@ Miso Soup (みそすーぷ) はHAL生が卒業制作を出展する[未来創造
 
 ## 画像
 
-![](/images/misosoup/cpu.png)
+<figure>
+  <img src="/images/misosoup/cpu.png" />
+  <figcaption>Chromeがとても軽い</figcaption>
+</figure>
 
-Chromeがとても軽い
+<figure>
+  <img src="/images/misosoup/comparison.png" />
+  <figcaption>左: 本家 (1画面に2作品映る) / 右: Miso Soup (1画面に10作品映る)</figcaption>
+</figure>
 
-![](/images/misosoup/comparison.png)
-
-左: 本家 (1画面に2作品映る)  
-右: Miso Soup (1画面に10作品映る)
-
-![](/images/misosoup/options.png)
-
-表示オプション (詳細設定ON)
+<figure>
+  <img src="/images/misosoup/options.png" />
+  <figcaption>表示オプション (詳細設定ON)</figcaption>
+</figure>
