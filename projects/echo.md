@@ -13,7 +13,7 @@ links:
     href: https://drive.google.com/file/d/13_w9ZYmlviMuinHUlOo4i8zosEZspCdm/view?usp=sharing
   - text: 実行ファイルをダウンロード (Coming Soon)
     href: https://example.com/
-  - text: ソースコードを見る (Coming Soon)
+  - text: ソースコードを見る
     href: https://github.com/i-yuuki/echo-game/
 ---
 
